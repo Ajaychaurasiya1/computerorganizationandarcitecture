@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+void fulladder(int a,int b,int c_in);
+
+int main()
+{
+int a,b,c_in;
+cin>>a;
+cin>>b;
+cin>>c_in;
+
+fulladder(a,b,c_in);
+
+    return 0;
+}
+void fulladder(int a,int b,int c_in)
+{
+    int sum;
+    int c_out;
+    sum=c_in^(a*b);
+    c_out=(a*b)||(c_in*a)||(b*c_in);
+    cout<<"sum : "<<sum<<endl;
+    cout<<"c_out : "<<c_out<<endl;
+}
