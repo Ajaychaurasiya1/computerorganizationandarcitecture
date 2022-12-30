@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void halfsubtractor(int a,int b);
+
+int main()
+{
+int a,b;
+cin>>a;
+cin>>b;
+halfsubtractor(a,b);
+
+    return 0;
+}
+void halfsubtractor(int a,int b)
+{
+    int difference;
+    int borrow;
+    difference=a^b;
+    a=!a;
+    borrow=a&b;
+    cout<<"difference : "<<difference<<endl;
+    cout<<"borrow : "<<borrow<<endl;
+}
